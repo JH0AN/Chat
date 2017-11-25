@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7A13154D2C12C90D52AEE0C2 /* Pods_FireMSN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080B1B1D422AE517D1B2B12A /* Pods_FireMSN.framework */; };
+		8D32F3EF1FC9F4C00032C1F5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D32F3EE1FC9F4C00032C1F5 /* LoginViewController.swift */; };
+		8D32F3F11FC9F4D70032C1F5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D32F3F01FC9F4D70032C1F5 /* RegisterViewController.swift */; };
+		8D32F3F31FC9F4F50032C1F5 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D32F3F21FC9F4F50032C1F5 /* ChatViewController.swift */; };
 		8DFDC41E1FC65CCC0088E20C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFDC41D1FC65CCC0088E20C /* AppDelegate.swift */; };
 		8DFDC4201FC65CCD0088E20C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFDC41F1FC65CCD0088E20C /* ViewController.swift */; };
 		8DFDC4231FC65CCD0088E20C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DFDC4211FC65CCD0088E20C /* Main.storyboard */; };
@@ -20,6 +23,9 @@
 		05ACB71FEBA618FAA8C8E2EE /* Pods-FireMSN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireMSN.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireMSN/Pods-FireMSN.debug.xcconfig"; sourceTree = "<group>"; };
 		080B1B1D422AE517D1B2B12A /* Pods_FireMSN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireMSN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		400B592BE7C25155D59F7EFD /* Pods-FireMSN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireMSN.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireMSN/Pods-FireMSN.release.xcconfig"; sourceTree = "<group>"; };
+		8D32F3EE1FC9F4C00032C1F5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8D32F3F01FC9F4D70032C1F5 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8D32F3F21FC9F4F50032C1F5 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		8DFDC41A1FC65CCC0088E20C /* FireMSN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireMSN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DFDC41D1FC65CCC0088E20C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DFDC41F1FC65CCD0088E20C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +76,9 @@
 				8DFDC4261FC65CCD0088E20C /* LaunchScreen.storyboard */,
 				8DFDC4291FC65CCD0088E20C /* Info.plist */,
 				8DFDC42F1FC65D7E0088E20C /* GoogleService-Info.plist */,
+				8D32F3EE1FC9F4C00032C1F5 /* LoginViewController.swift */,
+				8D32F3F01FC9F4D70032C1F5 /* RegisterViewController.swift */,
+				8D32F3F21FC9F4F50032C1F5 /* ChatViewController.swift */,
 			);
 			path = FireMSN;
 			sourceTree = "<group>";
@@ -228,8 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D32F3EF1FC9F4C00032C1F5 /* LoginViewController.swift in Sources */,
 				8DFDC4201FC65CCD0088E20C /* ViewController.swift in Sources */,
 				8DFDC41E1FC65CCC0088E20C /* AppDelegate.swift in Sources */,
+				8D32F3F31FC9F4F50032C1F5 /* ChatViewController.swift in Sources */,
+				8D32F3F11FC9F4D70032C1F5 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +405,7 @@
 				8DFDC42E1FC65CCD0088E20C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

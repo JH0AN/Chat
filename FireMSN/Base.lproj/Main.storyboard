@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Back-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FireMSN" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RegisterViewController" customModule="FireMSN" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2n-p9-5Kc">
                                 <rect key="frame" x="80" y="331" width="214" height="30"/>
@@ -38,7 +38,8 @@
                                     <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="g2N-eD-UwU" kind="show" id="LHi-Ge-3I7"/>
+                                    <action selector="buttonRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7W8-ZW-LjH"/>
+                                    <segue destination="g2N-eD-UwU" kind="show" identifier="goToChat" id="LHi-Ge-3I7"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2IP-iO-qid">
@@ -51,15 +52,20 @@
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Back" id="M8I-dp-joh"/>
+                    <connections>
+                        <outlet property="email_register" destination="2IP-iO-qid" id="bd3-Fj-Dab"/>
+                        <outlet property="pass_register" destination="gZG-Il-pfL" id="0Xu-t1-twK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1208.8" y="-1475.7121439280361"/>
+            <point key="canvasLocation" x="1209" y="-1543"/>
         </scene>
         <!--Login-->
         <scene sceneID="rdZ-ez-lDR">
             <objects>
-                <viewController id="g2N-eD-UwU" userLabel="Login" customClass="ViewController" customModule="FireMSN" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="g2N-eD-UwU" userLabel="Login" customClass="ChatViewController" customModule="FireMSN" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kM8-LM-CBd"/>
                         <viewControllerLayoutGuide type="bottom" id="gV1-9T-pA4"/>
@@ -78,6 +84,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Chat" id="i3D-i7-hGK">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="k9a-mO-VH8">
+                            <connections>
+                                <action selector="barLogOut:" destination="g2N-eD-UwU" id="WPW-DP-Rct"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PDs-sg-Mfc" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,7 +99,7 @@
         <!--Register-->
         <scene sceneID="c5O-Dq-9z5">
             <objects>
-                <viewController id="Hd5-Jp-WJp" userLabel="Register" customClass="ViewController" customModule="FireMSN" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Hd5-Jp-WJp" userLabel="Register" customClass="LoginViewController" customModule="FireMSN" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AAz-mp-s4n"/>
                         <viewControllerLayoutGuide type="bottom" id="nUw-9p-PsL"/>
@@ -100,7 +113,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="75d-Hq-OAJ">
                                 <rect key="frame" x="45" y="79" width="284" height="30"/>
@@ -119,12 +132,18 @@
                                     <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="g2N-eD-UwU" kind="show" id="qmj-fm-8vX"/>
+                                    <action selector="button_login:" destination="Hd5-Jp-WJp" eventType="touchUpInside" id="Ez1-ay-pXi"/>
+                                    <segue destination="g2N-eD-UwU" kind="show" identifier="goToChat" id="qmj-fm-8vX"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Back" id="jwc-oX-VYR"/>
+                    <connections>
+                        <outlet property="email_login" destination="KS0-Z2-xJd" id="Xiw-fc-NmG"/>
+                        <outlet property="pass_login" destination="uPT-UW-4Ih" id="iL0-OE-0ur"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PDF-fT-EZi" sceneMemberID="firstResponder"/>
             </objects>
@@ -177,7 +196,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="79N-RB-nee"/>
+                    <navigationItem key="navigationItem" title="Welcome" id="79N-RB-nee"/>
+                    <connections>
+                        <segue destination="g2N-eD-UwU" kind="show" identifier="goToChat" id="QpS-JS-7IM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9x4-Bf-TV9" sceneMemberID="firstResponder"/>
             </objects>
@@ -203,6 +225,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LHi-Ge-3I7"/>
+        <segue reference="qmj-fm-8vX"/>
     </inferredMetricsTieBreakers>
 </document>
