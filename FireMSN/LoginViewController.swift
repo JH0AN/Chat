@@ -7,13 +7,25 @@
 //
 
 import UIKit
-
+import Firebase
 class LoginViewController: UIViewController {
 
-    @IBOutlet var email_login: UIView!
+    
+    @IBOutlet var email_login: UITextField!
     @IBOutlet var pass_login: UITextField!
     @IBAction func button_login(_ sender: UIButton) {
-        
+    
+       
+            Auth.auth().signIn(withEmail: email_login.text!, password: pass_login.text!) { (user, error) in
+                if error != nil
+                {
+                    print(error!)
+                }
+                else{
+                    print("login is success")
+                    self.performSegue(withIdentifier: "goToChat", sender: self)
+                }
+        }
     }
     
     override func viewDidLoad() {

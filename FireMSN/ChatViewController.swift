@@ -7,11 +7,16 @@
 //
 
 import UIKit
-
+import Firebase
 class ChatViewController: UIViewController {
 
     @IBAction func barLogOut(_ sender: UIBarButtonItem) {
-        
+        do {
+            try  Auth.auth().signOut()
+            navigationController?.popToRootViewController(animated: true)
+        } catch  {
+            print("Hubo un error durante el proceso...")
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
