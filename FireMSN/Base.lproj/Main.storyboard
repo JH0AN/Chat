@@ -39,7 +39,6 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7W8-ZW-LjH"/>
-                                    <segue destination="g2N-eD-UwU" kind="show" identifier="goToChat" id="LHi-Ge-3I7"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2IP-iO-qid">
@@ -56,6 +55,7 @@
                     <connections>
                         <outlet property="email_register" destination="2IP-iO-qid" id="bd3-Fj-Dab"/>
                         <outlet property="pass_register" destination="gZG-Il-pfL" id="0Xu-t1-twK"/>
+                        <segue destination="g2N-eD-UwU" kind="show" identifier="goToChat" id="4Cx-bK-ZtG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -133,7 +133,6 @@
                                 </state>
                                 <connections>
                                     <action selector="button_login:" destination="Hd5-Jp-WJp" eventType="touchUpInside" id="Ez1-ay-pXi"/>
-                                    <segue destination="g2N-eD-UwU" kind="show" identifier="goToChat" id="qmj-fm-8vX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -143,6 +142,7 @@
                     <connections>
                         <outlet property="email_login" destination="KS0-Z2-xJd" id="Xiw-fc-NmG"/>
                         <outlet property="pass_login" destination="uPT-UW-4Ih" id="iL0-OE-0ur"/>
+                        <segue destination="g2N-eD-UwU" kind="show" identifier="goToChat" id="2oW-OK-eQ2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PDF-fT-EZi" sceneMemberID="firstResponder"/>
@@ -210,7 +210,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jNV-R2-Wdf" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="18m-r2-DPB">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="18m-r2-DPB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -225,6 +225,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qmj-fm-8vX"/>
+        <segue reference="2oW-OK-eQ2"/>
     </inferredMetricsTieBreakers>
 </document>
