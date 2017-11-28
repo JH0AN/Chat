@@ -119,6 +119,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="xiu-qq-agj" id="vvp-oD-6T5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PDs-sg-Mfc" sceneMemberID="firstResponder"/>
             </objects>

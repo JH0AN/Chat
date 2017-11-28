@@ -11,6 +11,8 @@
 		8D32F3EF1FC9F4C00032C1F5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D32F3EE1FC9F4C00032C1F5 /* LoginViewController.swift */; };
 		8D32F3F11FC9F4D70032C1F5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D32F3F01FC9F4D70032C1F5 /* RegisterViewController.swift */; };
 		8D32F3F31FC9F4F50032C1F5 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D32F3F21FC9F4F50032C1F5 /* ChatViewController.swift */; };
+		8DA5100A1FCCFA8B003D3DD1 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA510081FCCFA8B003D3DD1 /* CustomTableViewCell.swift */; };
+		8DA5100B1FCCFA8B003D3DD1 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA510091FCCFA8B003D3DD1 /* CustomTableViewCell.xib */; };
 		8DFDC41E1FC65CCC0088E20C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFDC41D1FC65CCC0088E20C /* AppDelegate.swift */; };
 		8DFDC4201FC65CCD0088E20C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFDC41F1FC65CCD0088E20C /* ViewController.swift */; };
 		8DFDC4231FC65CCD0088E20C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DFDC4211FC65CCD0088E20C /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 		8D32F3EE1FC9F4C00032C1F5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8D32F3F01FC9F4D70032C1F5 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8D32F3F21FC9F4F50032C1F5 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		8DA510081FCCFA8B003D3DD1 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		8DA510091FCCFA8B003D3DD1 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		8DFDC41A1FC65CCC0088E20C /* FireMSN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireMSN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DFDC41D1FC65CCC0088E20C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DFDC41F1FC65CCD0088E20C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 				8D32F3EE1FC9F4C00032C1F5 /* LoginViewController.swift */,
 				8D32F3F01FC9F4D70032C1F5 /* RegisterViewController.swift */,
 				8D32F3F21FC9F4F50032C1F5 /* ChatViewController.swift */,
+				8DA510081FCCFA8B003D3DD1 /* CustomTableViewCell.swift */,
+				8DA510091FCCFA8B003D3DD1 /* CustomTableViewCell.xib */,
 			);
 			path = FireMSN;
 			sourceTree = "<group>";
@@ -166,6 +172,7 @@
 				8DFDC4281FC65CCD0088E20C /* LaunchScreen.storyboard in Resources */,
 				8DFDC4301FC65D7E0088E20C /* GoogleService-Info.plist in Resources */,
 				8DFDC4251FC65CCD0088E20C /* Assets.xcassets in Resources */,
+				8DA5100B1FCCFA8B003D3DD1 /* CustomTableViewCell.xib in Resources */,
 				8DFDC4231FC65CCD0088E20C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DA5100A1FCCFA8B003D3DD1 /* CustomTableViewCell.swift in Sources */,
 				8D32F3EF1FC9F4C00032C1F5 /* LoginViewController.swift in Sources */,
 				8DFDC4201FC65CCD0088E20C /* ViewController.swift in Sources */,
 				8DFDC41E1FC65CCC0088E20C /* AppDelegate.swift in Sources */,

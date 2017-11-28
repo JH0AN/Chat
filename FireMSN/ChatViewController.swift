@@ -8,8 +8,9 @@
 
 import UIKit
 import Firebase
-class ChatViewController: UIViewController {
+class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
+    @IBOutlet var tableView: UITableView!
     @IBAction func barLogOut(_ sender: UIBarButtonItem) {
         do {
             try  Auth.auth().signOut()
@@ -18,12 +19,26 @@ class ChatViewController: UIViewController {
             print("Hubo un error durante el proceso...")
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       tableView.delegate = self
+       tableView.dataSource = self
+        tableView.register(UINib(nibName:"CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomMessageCell")
     }
-
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomMessageCell", for: indexPath) as! CustomTableViewCell
+        let messageArray = ["Cell 01","Cell 02", "Cell 03"]
+        cell.messageLabel.text = messageArray[indexPath.row]
+        return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
